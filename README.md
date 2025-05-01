@@ -9,6 +9,10 @@
 - 🧠 Backend built with Express and MongoDB (Mongoose)
 - 🔗 RESTful API routes for task operations
 
+.env
+MONGO_URI = "mongodb+srv://aditya:2674@mycluster.ojcwdlh.mongodb.net/guestara_todo?retryWrites=true&w=majority&appName=myCluster"
+PORT = 5000
+
 ## 🛠️ Setup and Installation
 
 ### 1. Clone the Repository
