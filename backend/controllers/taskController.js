@@ -8,6 +8,7 @@ const createTask = async (req, res) => {
     }
 
     const task = await Task.create({ title });
+
     const io = req.app.get("io");
     io.emit("taskCreated", task);
 
@@ -19,7 +20,7 @@ const createTask = async (req, res) => {
 
 const getTasks = async (req, res) => {
   try {
-    const tasks = await Task.find().sort({ createdAt: -1 });
+    const tasks = await Task.find({}).sort({ createdAt: -1 });
     res.status(200).json(tasks);
   } catch (error) {
     res.status(500).json({ message: "Something went wrong" });

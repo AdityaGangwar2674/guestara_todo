@@ -13,11 +13,6 @@ const taskSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
-  // (Optional) userId field if you add user authentication later
-  // userId: {
-  //   type: mongoose.Schema.Types.ObjectId,
-  //   ref: 'User'
-  // },
 });
 
 const Task = mongoose.model("Task", taskSchema);
