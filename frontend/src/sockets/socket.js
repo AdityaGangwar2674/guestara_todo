@@ -1,6 +1,6 @@
 import { io } from "socket.io-client";
 
-export const socket = io(import.meta.env.REACT_APP_BASE_URL, {
+export const socket = io(process.env.REACT_APP_BASE_URL, {
   withCredentials: true,
 });
 
